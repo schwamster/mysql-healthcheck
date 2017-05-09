@@ -1,0 +1,1 @@
+docker run -it -p 3306:3306 -p 4300:80 -e MYSQL_ROOT_PASSWORD=abc mariahealthcheck /bin/bash
