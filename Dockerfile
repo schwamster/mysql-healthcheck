@@ -1,5 +1,4 @@
-#FROM mariadb
-FROM ubiregiinc/mysql-without-volume
+FROM mysql
 
 ENV ASPNETCORE_URLS=http://+:80
 

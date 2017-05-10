@@ -38,9 +38,7 @@ namespace healthcheck
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseHealthcheckEndpoint(new HealthCheckOptions() { Message = "Its alive!" });
-
-            app.UseMvc();
+            app.UseHealthcheckEndpoint(new HealthCheckOptions() { Message = "Its alive!"});
         }
     }
 }
